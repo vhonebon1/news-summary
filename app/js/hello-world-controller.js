@@ -1,5 +1,5 @@
 angular.module("newsSummaryApp")
-  .controller("NewsSummaryController", [function() {
+  .controller("HelloWorldController", [function() {
     var self = this;
 
     self.greeting = "Hello, world";
