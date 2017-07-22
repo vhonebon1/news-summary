@@ -1,13 +1,14 @@
 (function() {
 
   var list = new NewsStoryList()
-  var newsStory = new NewsStory("first headline", "first content")
-  var newsStory2 = new NewsStory("second headline", "second content")
-  list.pushToStories(newsStory);
-  list.pushToStories(newsStory2);
+  var story1 = new NewsStory("first headline", "first content")
+  var story2 = new NewsStory("second headline", "second content")
+  list.pushToStories(story1);
+  list.pushToStories(story2);
 
   function testPushToStories() {
     assert.isTrue(list.stories.length === 2);
+    assert.isTrue(list.stories[1].id === 1);
   };
 
   testPushToStories();
