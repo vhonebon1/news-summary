@@ -1,9 +1,21 @@
 (function(exports) {
-  function News(headline, story){
+  function NewsStory(headline, story){
     this.headline = headline
-    this.story = story;
-
+    this.storyContent = story;
+    this.id = null
   };
 
-  exports.News = News;
+  NewsStory.prototype.getHeadline = function() {
+    return this.headline
+  }
+
+  NewsStory.prototype.getStory = function() {
+    return this.storyContent
+  }
+
+  NewsStory.prototype.getId = function() {
+    return this.id
+  }
+
+  exports.NewsStory = NewsStory;
 })(this);
