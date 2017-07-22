@@ -5,14 +5,14 @@
 
   NewsStoryListView.prototype.convertToHtml = function() {
     if (this.newsStoryList.getHeadlines().length >= 1) {
-      this._addInnerHtmlTags();
+      return this._addInnerHtmlTags();
     };
   }
 
   NewsStoryListView.prototype._addInnerHtmlTags = function() {
     var storiesHtml = []
     this.newsStoryList.getStories().map(function(story){
-      storiesHtml.push(_addTagsForOneNote(story))
+      storiesHtml.push(_addTagsForOneStory(story))
     });
     return storiesHtml;
   }

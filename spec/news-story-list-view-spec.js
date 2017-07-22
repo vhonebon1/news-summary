@@ -14,6 +14,7 @@
 
     // mock adding headlines here
 
-    testAddToPage();
+  }
+  testAddToPage();
 
 })();

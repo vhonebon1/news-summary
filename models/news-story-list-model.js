@@ -8,8 +8,6 @@
   };
 
   NewsStoryList.prototype.pushToStories = function(story) {
-    storyIndex = this.stories.length;
-    story.id = storyIndex;
     this.stories.push(story);
   };
 
