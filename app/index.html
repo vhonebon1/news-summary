@@ -9,12 +9,13 @@
     <script src="js/article-headline-controller.js"></script>
     <script src="js/news-story-model.js"></script>
     <script src="js/news-story-list-model.js"></script>
+    <script src="js/news-story-list-view-model.js"></script>
     <title>News Summary</title>
   </head>
   <h1>The news right now</h1>
   <body>
     <div ng-controller="ArticleHeadlineController as controller">
-      <div id="headline">{{controller.headline}}</div>
+      <div id="headlines">{{controller.headlines}}</div>
     </div>
   </body>
 </html>
