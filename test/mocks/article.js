@@ -12,6 +12,7 @@ module.exports = [{
       response: {
         content: {
           webTitle: "Edward Snowden headline",
+          text: "hello, this is test text"
         }
       }
     }
