@@ -17,5 +17,9 @@
     return this.id
   }
 
+  NewsStory.prototype.getStorySummary = function() {
+    return this.storyContent.split('.', 1)[0] + ".";
+  }
+
   exports.NewsStory = NewsStory;
 })(this);

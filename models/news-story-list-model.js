@@ -8,8 +8,14 @@
   };
 
   NewsStoryList.prototype.pushToStories = function(story) {
+    this._createIndex(story)
     this.stories.push(story);
   };
+
+  NewsStoryList.prototype._createIndex = function(story) {
+    storyIndex = this.stories.length;
+    story.id = storyIndex;
+  }
 
   NewsStoryList.prototype.getHeadlines = function() {
     return this.stories.map(function(story) {
