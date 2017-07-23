@@ -1,9 +1,6 @@
 (function() {
 
-  var story = new NewsStory("Dogs are the best", "Turns out dogs are the best")
-  var list = new NewsStoryList();
-  list.pushToStories(story);
-  var controller = new NewsController(list);
+  createOneTestStory()
 
   function testControllerAttributes() {
 
@@ -14,7 +11,7 @@
   testControllerAttributes();
 
   function testAddToPage() {
-    
+
     var dummyElement = document.createElement("div");
     dummyElement.innerHTML = "the dummy text"
     controller.addNoteToPage(dummyElement);

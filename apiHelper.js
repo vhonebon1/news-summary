@@ -16,11 +16,11 @@ function makeApiRequest() {
 }
 
 function pushHeadlinesToNewsStory(array) {
-  list = new NewsStoryList()
+  listForFirstPage = new NewsStoryList()
   array.forEach(function(element) {
-    story = new NewsStory(element, "no content yet")
-    list.pushToStories(story)
+    storyForFirstPage = new NewsStory(element, "no content yet")
+    listForFirstPage.pushToStories(storyForFirstPage)
   });
-  console.log(list)
-  return list
+  console.log(listForFirstPage)
+  return listForFirstPage
 }
