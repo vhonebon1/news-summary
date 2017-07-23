@@ -5,8 +5,8 @@
   list.pushToStories(story);
   var controller = new NewsController(list);
 
-
   function testControllerAttributes() {
+
     assert.isNotNull(controller.newsStoryList)
     assert.isNotNull(controller.newsStoryListView)
   }
@@ -14,6 +14,7 @@
   testControllerAttributes();
 
   function testAddToPage() {
+    
     var dummyElement = document.createElement("div");
     dummyElement.innerHTML = "the dummy text"
     controller.addNoteToPage(dummyElement);
