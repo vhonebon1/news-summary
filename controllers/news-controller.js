@@ -1,5 +1,5 @@
 (function(exports) {
-  function NewsController(newsStoryList) {
+  function NewsController(newsStoryList){
     this.newsStoryList = newsStoryList;
     this.newsStoryListView = new NewsStoryListView(this.newsStoryList);
   };
