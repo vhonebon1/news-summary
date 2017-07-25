@@ -12,11 +12,3 @@ function createOneTestStory() {
   list1.pushToStories(story);
   controller1 = new NewsController(list);
 }
-
-function delay() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();
